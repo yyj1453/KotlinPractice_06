@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout 생성, 가로세로 화면에 꽉참, 수직형태-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--버튼1 생성, 가로세로 내용물 크기, BUTTON1-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"/>
+    <!--버튼2 생성, 가로세로 내용물 크키, BUTTON2-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"/>
+    <!--LineatLayout안에 또 LinearLayout생성, 가로 부모 크기, 세로 내용물 크기, 수평형태-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--버튼3 생성, 가로세로 내용물 크기, BUTTON3-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON3"/>
+        <!--버튼4 생성, 가로세로 내용물 크기, BUTTON4-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON4"/>
+    </LinearLayout>
+    <!--텍스트뷰 생성, id = text1, 가로 부모(수직리니어)크기, 세로 내용물크기, hello-->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--수평리니어 생성, 가로세로 부모(화면전체)크기-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--버튼1 생성, 가로세로 내용물 크기, 배경색 = #0000FF, 패딩(껍데기와 내용물의 간격) = 30dp-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"
+        android:backgroundTint="#0000FF"
+        android:padding="30dp"/>
+    <!--버튼2 생성, 가로 부모(수평리니어)크기, 세로 내용물 크기, 배경색 = #FF0000, 바닥 패딩 = 50dp, 레이아웃마진(껍데기와 레이아웃과의 거리) = 50dp-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"
+        android:backgroundTint="#FF0000"
+        android:paddingBottom="50dp"
+        android:layout_margin="50dp"/>
+</LinearLayout>

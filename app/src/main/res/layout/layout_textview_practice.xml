@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--수직리니어 생성, 가로세로 부모(화면전체)크기-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--텍스트뷰 생성, 가로 부모(수직리니어)크기, 세로 내용물 크기, 글자 색 = #FF0000, 글자 크기 = 20sp, 글자 스타일 = 굵게-->
+    <TextView
+        android:id="@+id/normalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="helloworld"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <!--텍스트뷰 생성, 가로 부모(수직리니어)크기, 세로 내용물 크기, 오토 링크 = (email, phone)-->
+    <TextView
+        android:id="@+id/linkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일 : yyj1453@gmail.com, 전화번호 : 010-4611-1453"
+        android:autoLink="email|phone"/>
+    <!--수직 리니어, 가로 부모(수직리니어)크기, 세로 내용물 크기-->
+    <LinearLayout
+        android:id="@+id/maxlinesEllipsizeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--텍스트뷰 생성, 가로 부모(수직리니어) 크기, 세로 내옹물 크기, 1줄만 허용, ".."으로 생략 = 중간-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text"
+            android:singleLine="true"
+            android:ellipsize="middle"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+        <!--텍스트뷰 생성, 가로 부모(수직리니어) 크기, 세로 내용물 크기, 최대 라인 = 3줄, ".."으로 생략 = 끝-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+</LinearLayout>

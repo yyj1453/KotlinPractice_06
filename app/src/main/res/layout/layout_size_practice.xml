@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--수직리니어 생성, 가로세로 부모(화면 전체)크기, 배경색 = #FFFF00-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF00">
+    <!--버튼1, 가로세로 내용물 크기, 배경색 = #0000FF-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"
+        android:backgroundTint="#0000FF"/>
+    <!--버튼2, 가로 부모(수직리니어)크기, 세로 내용물 크기, 배경색 = #FF0000-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"
+        android:backgroundTint="#FF0000"/>
+</LinearLayout>
